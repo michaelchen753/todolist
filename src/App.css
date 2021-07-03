@@ -2,14 +2,13 @@
   text-align: center;
 }
 
-
-
 .green {
   color:green;
-  background-color: crimson;
+
 }
 
 .red {
   color:red;
-  background-color: dodgerblue;
+  text-decoration:line-through;
 }
+  
