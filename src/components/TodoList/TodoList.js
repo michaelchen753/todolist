@@ -7,10 +7,10 @@ export default function TodoList({todos, updateTodos, deleteTodo}) {
             <ol>
                 {
                     todos.map((todo,index)=>{
-                        return (
-                            <li>
+                        const{id} = todo;
+                        return (                            
+                            <li key={id}>
                                  <ListItem 
-                                    key={todo.id} 
                                     todo={todo} 
                                     updateTodos={updateTodos} 
                                     deleteTodo={deleteTodo}                            

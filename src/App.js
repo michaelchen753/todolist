@@ -46,7 +46,7 @@ function App() {
     const fetchData = async () => {      
       const response = await fetch(url);
       const data = await response.json();
-      setTodos(data.slice(0,9)); 
+      setTodos(data.slice(0,5)); 
       setLoading(false);
     };
     fetchData();
@@ -57,6 +57,7 @@ function App() {
       <h1 className="header">My todo list</h1>
       <div className='add-todo-form'>
         <form onSubmit={addNewTodo}>
+          <label htmlFor="todo-title">Title:</label>
           <input 
           type='text' 
           onChange={e=>setName(e.target.value)}
